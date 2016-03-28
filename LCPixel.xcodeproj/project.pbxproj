@@ -13,6 +13,12 @@
 		D93EA14E1CA0F52D003E5AA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93EA14C1CA0F52D003E5AA2 /* Main.storyboard */; };
 		D93EA1501CA0F52D003E5AA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D93EA14F1CA0F52D003E5AA2 /* Assets.xcassets */; };
 		D93EA1531CA0F52D003E5AA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D93EA1511CA0F52D003E5AA2 /* LaunchScreen.storyboard */; };
+		D93EA15C1CA12044003E5AA2 /* LCPixelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EA15B1CA12044003E5AA2 /* LCPixelCell.m */; };
+		D93EA15F1CA1238B003E5AA2 /* LCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D93EA15E1CA1238B003E5AA2 /* LCSecondViewController.m */; };
+		D9A2C6A01CA3F3A400309A7E /* UIImageView+AddCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C69F1CA3F3A400309A7E /* UIImageView+AddCornerRadius.m */; };
+		D9A2C6A31CA3F4F700309A7E /* UIView+AddCornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A2C6A21CA3F4F700309A7E /* UIView+AddCornerRadius.m */; };
+		D9C863A21CA524FF0064F5A1 /* LCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C863A11CA524FF0064F5A1 /* LCImageView.m */; };
+		D9C863A51CA53AC80064F5A1 /* LCView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9C863A41CA53AC80064F5A1 /* LCView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,18 @@
 		D93EA14F1CA0F52D003E5AA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D93EA1521CA0F52D003E5AA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D93EA1541CA0F52D003E5AA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D93EA15A1CA12044003E5AA2 /* LCPixelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPixelCell.h; sourceTree = "<group>"; };
+		D93EA15B1CA12044003E5AA2 /* LCPixelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPixelCell.m; sourceTree = "<group>"; };
+		D93EA15D1CA1238B003E5AA2 /* LCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCSecondViewController.h; sourceTree = "<group>"; };
+		D93EA15E1CA1238B003E5AA2 /* LCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCSecondViewController.m; sourceTree = "<group>"; };
+		D9A2C69E1CA3F3A400309A7E /* UIImageView+AddCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AddCornerRadius.h"; sourceTree = "<group>"; };
+		D9A2C69F1CA3F3A400309A7E /* UIImageView+AddCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AddCornerRadius.m"; sourceTree = "<group>"; };
+		D9A2C6A11CA3F4F700309A7E /* UIView+AddCornerRadius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AddCornerRadius.h"; sourceTree = "<group>"; };
+		D9A2C6A21CA3F4F700309A7E /* UIView+AddCornerRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AddCornerRadius.m"; sourceTree = "<group>"; };
+		D9C863A01CA524FF0064F5A1 /* LCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCImageView.h; sourceTree = "<group>"; };
+		D9C863A11CA524FF0064F5A1 /* LCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCImageView.m; sourceTree = "<group>"; };
+		D9C863A31CA53AC80064F5A1 /* LCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCView.h; sourceTree = "<group>"; };
+		D9C863A41CA53AC80064F5A1 /* LCView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,18 @@
 				D93EA1471CA0F52D003E5AA2 /* AppDelegate.m */,
 				D93EA1491CA0F52D003E5AA2 /* ViewController.h */,
 				D93EA14A1CA0F52D003E5AA2 /* ViewController.m */,
+				D93EA15D1CA1238B003E5AA2 /* LCSecondViewController.h */,
+				D93EA15E1CA1238B003E5AA2 /* LCSecondViewController.m */,
+				D93EA15A1CA12044003E5AA2 /* LCPixelCell.h */,
+				D93EA15B1CA12044003E5AA2 /* LCPixelCell.m */,
+				D9C863A01CA524FF0064F5A1 /* LCImageView.h */,
+				D9C863A11CA524FF0064F5A1 /* LCImageView.m */,
+				D9C863A31CA53AC80064F5A1 /* LCView.h */,
+				D9C863A41CA53AC80064F5A1 /* LCView.m */,
+				D9A2C69E1CA3F3A400309A7E /* UIImageView+AddCornerRadius.h */,
+				D9A2C69F1CA3F3A400309A7E /* UIImageView+AddCornerRadius.m */,
+				D9A2C6A11CA3F4F700309A7E /* UIView+AddCornerRadius.h */,
+				D9A2C6A21CA3F4F700309A7E /* UIView+AddCornerRadius.m */,
 				D93EA14C1CA0F52D003E5AA2 /* Main.storyboard */,
 				D93EA14F1CA0F52D003E5AA2 /* Assets.xcassets */,
 				D93EA1511CA0F52D003E5AA2 /* LaunchScreen.storyboard */,
@@ -110,6 +140,7 @@
 				TargetAttributes = {
 					D93EA13F1CA0F52D003E5AA2 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DGT9C327YY;
 					};
 				};
 			};
@@ -149,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A2C6A31CA3F4F700309A7E /* UIView+AddCornerRadius.m in Sources */,
+				D93EA15F1CA1238B003E5AA2 /* LCSecondViewController.m in Sources */,
+				D9C863A51CA53AC80064F5A1 /* LCView.m in Sources */,
 				D93EA14B1CA0F52D003E5AA2 /* ViewController.m in Sources */,
+				D93EA15C1CA12044003E5AA2 /* LCPixelCell.m in Sources */,
 				D93EA1481CA0F52D003E5AA2 /* AppDelegate.m in Sources */,
+				D9C863A21CA524FF0064F5A1 /* LCImageView.m in Sources */,
 				D93EA1451CA0F52D003E5AA2 /* main.m in Sources */,
+				D9A2C6A01CA3F3A400309A7E /* UIImageView+AddCornerRadius.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,9 +300,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LCPixel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lee.LCPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = licong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -274,9 +313,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = LCPixel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Lee.LCPixel;
+				PRODUCT_BUNDLE_IDENTIFIER = licong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -300,6 +341,7 @@
 				D93EA1591CA0F52D003E5AA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
