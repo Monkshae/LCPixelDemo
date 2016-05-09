@@ -17,22 +17,15 @@
 
     [super awakeFromNib];
 
-    
+  //高效画圆角
 //    for (int i = 0; i< 9; i++) {
 //        UIView *view = [[UIView alloc]init];
 //        view.frame = CGRectMake(10 + i * 40, 10, 30, 30);
 //        [view lc_addCorner:10];
 //        [self.contentView addSubview:view];
 //    }
-    
-    
-//    for (int j = 0; j< 9; j++) {
-//        UIImageView *image = [[UIImageView alloc]initWithFrame:CGRectMake(10 + j * 40, 50, 30, 30)];
-//        image.backgroundColor = [UIColor redColor];
-//        [image lc_addImageViewCorner:10];
-//        [self.contentView addSubview:image];
-//    }
-
+//    
+//    
 //    for (int j = 0; j< 9; j++) {
 //        LCImageView *image = [[LCImageView alloc]initWithFrame:CGRectMake(10 + j * 40, 50, 30, 30)];
 //        [self.contentView addSubview:image];
@@ -43,8 +36,9 @@
     [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
        
         if ([obj isKindOfClass:[UILabel class]] || [obj isKindOfClass:[UIButton class]] || [obj isKindOfClass:[UIView class]]) {
-            obj.clipsToBounds = YES;
-            obj.layer.cornerRadius = 10;
+//            obj.clipsToBounds = YES;
+//            obj.layer.cornerRadius = 10;
+//            obj.layer.shouldRasterize = YES;
 //            obj.layer.borderColor = [UIColor redColor].CGColor;
 //            obj.layer.borderWidth = 5;
 //            obj.layer.shadowOffset=CGSizeMake(5, 5);
@@ -83,16 +77,16 @@
 
 - (void)drawRect:(CGRect)rect{
     
-//    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-//       
-//        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:obj.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(10, 10)];
-//
-//        CAShapeLayer *layer = [[CAShapeLayer alloc]init];
-//        layer.frame = obj.bounds;
-//        layer.path = path.CGPath;
-//        obj.layer.mask = layer;
-//
-//    }];
+    [self.contentView.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+       
+        UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:obj.bounds byRoundingCorners:UIRectCornerAllCorners cornerRadii:CGSizeMake(10, 10)];
+
+        CAShapeLayer *layer = [[CAShapeLayer alloc]init];
+        layer.frame = obj.bounds;
+        layer.path = path.CGPath;
+        obj.layer.mask = layer;
+
+    }];
     
 }
 
